@@ -14,10 +14,22 @@ init_db()
 
 app = FastAPI(title="AI Career Recommendation API")
 
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:8443")
+
+origins = [
+    "http://localhost:8443",
+    "http://127.0.0.1:8443",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+]
+if frontend_url not in origins:
+    origins.append(frontend_url)
+
 # Configure CORS for React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "*"], # Allows all origins for local dev
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -29,5 +41,9 @@ app.include_router(careers.router)
 app.include_router(progress.router)
 
 @app.get("/api/health")
-def health_check():
+def api_health_check():
+    return {"status": "ok"}
+
+@app.get("/health")
+def root_health_check():
     return {"status": "ok"}

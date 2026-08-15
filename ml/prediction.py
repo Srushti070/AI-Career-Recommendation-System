@@ -11,9 +11,14 @@ from ml.career_profiles import CAREER_PROFILES
 # Load Model and Required Files
 # ===========================================
 
-model = joblib.load("model/career_prediction_model.pkl")
-scaler = joblib.load("model/scaler.pkl")
-encoders = joblib.load("model/label_encoders.pkl")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_DIR = BASE_DIR / "model"
+
+model = joblib.load(MODEL_DIR / "career_prediction_model.pkl")
+scaler = joblib.load(MODEL_DIR / "scaler.pkl")
+encoders = joblib.load(MODEL_DIR / "label_encoders.pkl")
 
 career_encoder = encoders["Career"]
 
@@ -22,7 +27,7 @@ career_encoder = encoders["Career"]
 # Load Feature Names
 # ===========================================
 
-df = pd.read_csv("dataset/preprocessed_dataset.csv")
+df = pd.read_csv(BASE_DIR / "dataset" / "preprocessed_dataset.csv")
 feature_names = df.drop("Career", axis=1).columns
 
 
