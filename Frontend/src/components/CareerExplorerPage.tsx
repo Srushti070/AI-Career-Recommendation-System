@@ -143,6 +143,8 @@ export default function CareerExplorerPage({ navigate }: CareerExplorerPageProps
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
             <input
+              id="careerSearch"
+              name="careerSearch"
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder="Search careers..."

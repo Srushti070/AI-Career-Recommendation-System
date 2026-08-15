@@ -22,28 +22,28 @@ api.interceptors.request.use(
 );
 
 export const submitAssessment = async (data: any) => {
-    const response = await api.post('/api/assessment/submit', data);
-    return response.data;
+  const response = await api.post('/api/assessment/submit', data);
+  return response.data;
 };
 
 export const getCareers = async () => {
-    const response = await api.get('/api/careers');
-    return response.data;
+  const response = await api.get('/api/careers');
+  return response.data;
 };
 
 export const getCareerDetails = async (careerName: string) => {
-    const response = await api.get(`/api/careers/${careerName}`);
-    return response.data;
+  const response = await api.get(`/api/careers/${careerName}`);
+  return response.data;
 };
 
 export const getProgress = async () => {
-    const response = await api.get(`/api/progress`);
-    return response.data;
+  const response = await api.get(`/api/progress`);
+  return response.data;
 };
 
 export const saveProgress = async (completedTasks: string[]) => {
-    const response = await api.post('/api/progress', { completed_tasks: completedTasks });
-    return response.data;
+  const response = await api.post('/api/progress', { completed_tasks: completedTasks });
+  return response.data;
 };
 
 export default api;

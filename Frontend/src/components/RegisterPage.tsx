@@ -64,7 +64,9 @@ export default function RegisterPage({ navigate }: AuthPageProps) {
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
           <div>
             <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Full Name</label>
-            <input 
+            <input
+              id="name"
+              name="name" 
               type="text" 
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -75,7 +77,9 @@ export default function RegisterPage({ navigate }: AuthPageProps) {
           </div>
           <div>
             <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Email Address</label>
-            <input 
+            <input
+              id="email"
+              name="email"
               type="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -87,6 +91,8 @@ export default function RegisterPage({ navigate }: AuthPageProps) {
           <div>
             <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Password</label>
             <input 
+              id="password"
+              name="password"
               type="password" 
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -98,6 +104,8 @@ export default function RegisterPage({ navigate }: AuthPageProps) {
           <div>
             <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Confirm Password</label>
             <input 
+              id="confirm-password"
+              name="confirm-password"
               type="password" 
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
