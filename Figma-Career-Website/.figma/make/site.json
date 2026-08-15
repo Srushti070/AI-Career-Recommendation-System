@@ -1,0 +1,10 @@
+{
+  "description": "Create stunning websites effortlessly with customizable templates and intuitive tools, perfect for businesses, bloggers, and creatives looking to establish an online presence.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
