@@ -61,7 +61,7 @@ export interface AppState {
 function AppContent() {
   const navigateRouter = useNavigate()
   const location = useLocation()
-  
+
   let view: View | 'login' | 'register' | 'profile' = 'home'
   const path = location.pathname.slice(1) || 'home'
   if (['home', 'assessment', 'results', 'roadmap', 'skill-gap', 'learning-path', 'career-plan', 'career-explorer', 'career-detail', 'career-insights', 'compare', 'login', 'register', 'profile'].includes(path)) {
@@ -108,7 +108,7 @@ function AppContent() {
           <Route path="/home" element={<HomePage navigate={navigate} />} />
           <Route path="/login" element={<LoginPage navigate={navigate} />} />
           <Route path="/register" element={<RegisterPage navigate={navigate} />} />
-          
+
           {/* Protected Routes */}
           <Route path="/assessment" element={<ProtectedRoute><AssessmentPage navigate={navigate} onComplete={completeAssessment} /></ProtectedRoute>} />
           <Route path="/results" element={<ProtectedRoute><AIResultsPage navigate={navigate} career={appState.selectedCareer} result={appState.assessmentResult} /></ProtectedRoute>} />
@@ -117,7 +117,7 @@ function AppContent() {
           <Route path="/learning-path" element={<ProtectedRoute><LearningPathPage navigate={navigate} career={appState.selectedCareer} /></ProtectedRoute>} />
           <Route path="/career-plan" element={<ProtectedRoute><MyCareerPlanPage navigate={navigate} career={appState.selectedCareer} /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><AIResultsPage navigate={navigate} career={appState.selectedCareer} result={appState.assessmentResult} /></ProtectedRoute>} />
-          
+
           {/* Public Exploratory Routes */}
           <Route path="/career-explorer" element={<CareerExplorerPage navigate={navigate} />} />
           <Route path="/career-detail" element={<CareerDetailPage navigate={navigate} career={appState.selectedCareer} />} />
@@ -132,7 +132,7 @@ function AppContent() {
 export default function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <AppContent />
       </Router>
     </AuthProvider>
