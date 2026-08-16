@@ -1,23 +1,21 @@
-# 🎯 AI Career Recommendation System
+🚀 AI Career Recommendation System
 
-An AI-powered career guidance platform designed to help students
-discover suitable career paths through personalized assessments,
-career recommendations, skill-gap analysis, and learning roadmaps.
+An AI-powered career guidance platform that helps students discover suitable career paths through personalized assessments, machine-learning-based recommendations, and structured learning roadmaps.
 
-The platform combines a modern React frontend with a Python/FastAPI
-backend and machine-learning components to provide a personalized
-career discovery experience.
+**🌐 Live Demo**
 
-## 🚀 Live Demo
+👉 Visit the AI Career Recommendation System
+       --->      https://ai-career-recommendation-system-teal.vercel.app/
+------------------------------------------------------------------------
+###📌 Overview
+-
 
-**Frontend:**  
-https://ai-career-recommendation-system-teal.vercel.app/
+Choosing the right career path can be difficult when students have different skills, interests, strengths, and learning goals.
 
-**Backend API:**  
-https://ai-career-backend-g27m.onrender.com/
+The AI Career Recommendation System provides a personalized career discovery experience. Users can create an account, complete a career assessment, receive a recommended career path, review their strengths and skills, and explore next steps toward becoming career-ready.
 
----
-
+The platform combines a modern React frontend, FastAPI backend, PostgreSQL persistence, authentication, assessment processing, and a machine-learning recommendation pipeline.
+-----------------------------------------------------------------------------------
 ## ✨ Key Features
 
 ### 🎯 Personalized Career Assessment
@@ -53,41 +51,144 @@ with JWT-based authentication.
 The frontend is designed as a responsive web application for
 different screen sizes.
 
----
+----------------------------------------------------------------------------
+🧠 Example Career Recommendation:
+-
+ The system can generate a career match such as:
 
+Data Scientist
+
+with supporting information including:
+
+Strengths
+
+Skills
+
+Next steps
+
+Match percentage
+
+Salary range
+
+Career scope
+-------------------------------------------------------------------
 ## 🏗️ System Architecture
-
 ```text
-                    ┌─────────────────────┐
-                    │       User          │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │ TypeScript + Vite   │
-                    │    Tailwind CSS     │
-                    └──────────┬──────────┘
-                               │
+                         ┌──────────────────┐
+                         │      User        │
+                         └────────┬─────────┘
+                                  │
+                                  ▼
+                    ┌──────────────────────────┐
+                    │     React Frontend       │
+                    │ TypeScript + Vite        │
+                    │ Tailwind CSS             │
+                    └────────────┬─────────────┘
+                                 │
                          REST API / Axios
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    FastAPI Backend  │
-                    │       Python        │
-                    └──────────┬──────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-              ▼                ▼                ▼
-       Authentication      Assessment       ML Pipeline
-        JWT + bcrypt       Processing      scikit-learn
-              │                │                │
-              └────────────────┼────────────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │      Database       │
-                    │    PostgreSQL       │
-                    │     SQLAlchemy      │
-                    └─────────────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │      FastAPI Backend     │
+                    │          Python          │
+                    └────────────┬─────────────┘
+                                 │
+             ┌───────────────────┼───────────────────┐
+             │                   │                   │
+             ▼                   ▼                   ▼
+      ┌─────────────┐     ┌─────────────┐     ┌──────────────┐
+      │    Auth     │     │ Assessment  │     │ ML Pipeline  │
+      │ JWT + bcrypt│     │ Processing  │     │ scikit-learn │
+      └─────────────┘     └─────────────┘     └──────┬───────┘
+             │                   │                    │
+             └───────────────────┼────────────────────┘
+                                 │
+                                 ▼
+                       ┌──────────────────┐
+                       │   PostgreSQL     │
+                       │   SQLAlchemy     │
+                       └──────────────────┘
+
+```
+
+---------------------------------------------------------------------------------------
+🚀 Deployment
+
+Frontend
+
+The React + TypeScript frontend is deployed on Vercel.
+
+Production Website:
+
+https://ai-career-recommendation-system-teal.vercel.app/
+
+Backend
+
+The FastAPI backend is deployed separately on Render.
+
+Backend API:
+
+https://ai-career-backend-g27m.onrender.com/
+
+The frontend communicates with the backend through REST API endpoints.
+
+--------------------------------------------------------------------------------
+📈 Future Improvements
+
+Potential future enhancements include:
+
+More career categories and datasets
+
+Improved recommendation accuracy
+
+More advanced ML models
+
+Explainable AI for recommendation reasoning
+
+Detailed career comparison
+
+Personalized learning resources
+
+Progress analytics and dashboards
+
+Additional assessment dimensions
+
+Automated career-market insights
+
+---------------------------------------------------------------
+🎯 Project Goals
+-
+
+The project aims to:
+
+Help students understand suitable career options
+
+Connect skills and interests with career paths
+
+Provide personalized career recommendations
+
+Turn recommendations into actionable learning paths
+
+Demonstrate a complete full-stack AI/ML application
+
+---------------------------------------------------------------------
+👩‍💻 Author
+-
+
+Srushti Titarmare
+
+B.Tech — Data Science
+G.H. Raisoni College of Engineering, Nagpur
+
+Project Repository
+
+https://github.com/Srushti070/AI-Career-Recommendation-System
+
+Live Application
+
+https://ai-career-recommendation-system-teal.vercel.app/
+
+⭐ Support
+-
+
+If you find this project interesting, consider giving the repository a ⭐ on GitHub.
