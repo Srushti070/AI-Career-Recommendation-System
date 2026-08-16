@@ -1,4 +1,4 @@
-🚀 AI Career Recommendation System
+### 🚀 AI Career Recommendation System
 
 An AI-powered career guidance platform that helps students discover suitable career paths through personalized assessments, machine-learning-based recommendations, and structured learning roadmaps.
 
@@ -6,15 +6,17 @@ An AI-powered career guidance platform that helps students discover suitable car
 
 👉 Visit the AI Career Recommendation System
        --->      https://ai-career-recommendation-system-teal.vercel.app/
+       
 ------------------------------------------------------------------------
-###📌 Overview
--
+## 📌 Overview
+
 
 Choosing the right career path can be difficult when students have different skills, interests, strengths, and learning goals.
 
 The AI Career Recommendation System provides a personalized career discovery experience. Users can create an account, complete a career assessment, receive a recommended career path, review their strengths and skills, and explore next steps toward becoming career-ready.
 
 The platform combines a modern React frontend, FastAPI backend, PostgreSQL persistence, authentication, assessment processing, and a machine-learning recommendation pipeline.
+
 -----------------------------------------------------------------------------------
 ## ✨ Key Features
 
@@ -52,9 +54,9 @@ The frontend is designed as a responsive web application for
 different screen sizes.
 
 ----------------------------------------------------------------------------
-🧠 Example Career Recommendation:
--
- The system can generate a career match such as:
+## 🧠 Example Career Recommendation:
+
+The system can generate a career match such as:
 
 Data Scientist
 
@@ -71,6 +73,7 @@ Match percentage
 Salary range
 
 Career scope
+
 -------------------------------------------------------------------
 ## 🏗️ System Architecture
 ```text
@@ -112,52 +115,29 @@ Career scope
 ```
 
 ---------------------------------------------------------------------------------------
-🚀 Deployment
+## 🚀 Deployment
 
-Frontend
+### Frontend
 
 The React + TypeScript frontend is deployed on Vercel.
 
-Production Website:
+### Production Website:
 
 https://ai-career-recommendation-system-teal.vercel.app/
 
-Backend
+### Backend
 
 The FastAPI backend is deployed separately on Render.
 
-Backend API:
+### Backend API:
 
 https://ai-career-backend-g27m.onrender.com/
 
 The frontend communicates with the backend through REST API endpoints.
 
 --------------------------------------------------------------------------------
-📈 Future Improvements
 
-Potential future enhancements include:
-
-More career categories and datasets
-
-Improved recommendation accuracy
-
-More advanced ML models
-
-Explainable AI for recommendation reasoning
-
-Detailed career comparison
-
-Personalized learning resources
-
-Progress analytics and dashboards
-
-Additional assessment dimensions
-
-Automated career-market insights
-
----------------------------------------------------------------
-🎯 Project Goals
--
+## 🎯 Project Goals
 
 The project aims to:
 
@@ -172,14 +152,11 @@ Turn recommendations into actionable learning paths
 Demonstrate a complete full-stack AI/ML application
 
 ---------------------------------------------------------------------
-👩‍💻 Author
--
+## 👩‍💻 Author
 
 Srushti Titarmare
 
 B.Tech — Data Science
-G.H. Raisoni College of Engineering, Nagpur
-
 Project Repository
 
 https://github.com/Srushti070/AI-Career-Recommendation-System
