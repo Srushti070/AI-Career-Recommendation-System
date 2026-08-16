@@ -22,6 +22,9 @@ origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:3000",
+    # Vercel production/deployment URLs
+    "https://ai-career-recommendation-system-teal.vercel.app",
+    "https://ai-career-recommendation-system-ah9n749if-srus.vercel.app"
 ]
 if frontend_url not in origins:
     origins.append(frontend_url)
