@@ -55,27 +55,24 @@ different screen sizes.
 
 ----------------------------------------------------------------------------
 ## 🛠️ Tech Stack
-----------------------------------------------------------   ------------------------------------------------------
-| **Technology** | **Purpose**                           |   | **Technology** | **Purpose**                       |
-|------------------|-------------------------------------|   |----------------|-----------------------------------|
-| **React 19**     | User interface                      |   |  **Python**    | Backend and ML development        |
-| **TypeScript**   | Type-safe development               |   |  **FastAPI**   | REST API                          |
-| **Vite**         | Frontend build tooling              |   | **Uvicorn**    | ASGI server                       |
-| **Tailwind CSS** | Stylin                              |   |**SQLAlchemy**  | ORM/database interaction          |
-| **React Router** | Client-side routing                 |   |**PostgreSQL**  | Relational database               |
-| **Axios**        | API communication                   |   | **psycopg2**   | PostgreSQL connectivity           |
-| **TanStack React Query** |Server-state/data management |   |**Pydantic / Email Validator** | Request validation |
-----------------------------------------------------------   | **python-jose** | JWT authentication               |
-                                                             | **bcrypt**      | Password hashing                 |
-                                                             ------------------------------------------------------
-### Machine Learning
------------------------------------------           ----------------------------------------
-| **Technology** | **Purpose**          |          | **Technology**  | **Purpose**         |
-|----------------|--------------------- |          |-----------------|---------------------|
-| **Python**     | ML development       |          |**NumPy**        | Numerical computing |
-| **Pandas**     | Data processing      |          |**scikit-learn** | Machine learning    |
-| **SciPy**      | Scientific computing |          |**Joblib**       | Model persistence   |
------------------------------------------           ---------------------------------------
+
+| **Frontend** | **Backend** | **ML / Data** |
+|:---|:---|:---|
+| React 19 — User Interface | Python — Backend & ML | NumPy — Numerical Computing |
+| TypeScript — Type-Safe Development | FastAPI — REST API | Pandas — Data Processing |
+| Vite — Build Tooling | Uvicorn — ASGI Server | scikit-learn — Machine Learning |
+| Tailwind CSS — Styling | SQLAlchemy — ORM / Database | SciPy — Scientific Computing |
+| React Router — Client-Side Routing | PostgreSQL — Relational Database | Joblib — Model Persistence |
+| Axios — API Communication | psycopg2 — PostgreSQL Connectivity | Python — ML Development |
+| TanStack React Query — Server-State Management | Pydantic / Email Validator — Request Validation | |
+| | python-jose — JWT Authentication | |
+| | bcrypt — Password Hashing | |
+
+| **Deployment** | **Service** | **Purpose** |
+|:---|:---|:---|
+| Vercel | Frontend | Frontend Deployment |
+| Render | Backend | Backend Deployment |
+| PostgreSQL | Database | Production Database |
 
 -------------------------------------------------------------------------------------------------------------
 ## 🏗️ System Architecture
