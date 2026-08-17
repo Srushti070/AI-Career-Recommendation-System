@@ -54,27 +54,30 @@ The frontend is designed as a responsive web application for
 different screen sizes.
 
 ----------------------------------------------------------------------------
-## 🧠 Example Career Recommendation:
+## 🛠️ Tech Stack
+----------------------------------------------------------   ------------------------------------------------------
+| **Technology** | **Purpose**                           |   | **Technology** | **Purpose**                       |
+|------------------|-------------------------------------|   |----------------|-----------------------------------|
+| **React 19**     | User interface                      |   |  **Python**    | Backend and ML development        |
+| **TypeScript**   | Type-safe development               |   |  **FastAPI**   | REST API                          |
+| **Vite**         | Frontend build tooling              |   | **Uvicorn**    | ASGI server                       |
+| **Tailwind CSS** | Stylin                              |   |**SQLAlchemy**  | ORM/database interaction          |
+| **React Router** | Client-side routing                 |   |**PostgreSQL**  | Relational database               |
+| **Axios**        | API communication                   |   | **psycopg2**   | PostgreSQL connectivity           |
+| **TanStack React Query** |Server-state/data management |   |**Pydantic / Email Validator** | Request validation |
+----------------------------------------------------------   | **python-jose** | JWT authentication               |
+                                                             | **bcrypt**      | Password hashing                 |
+                                                             ------------------------------------------------------
+### Machine Learning
+-----------------------------------------           ----------------------------------------
+| **Technology** | **Purpose**          |          | **Technology**  | **Purpose**         |
+|----------------|--------------------- |          |-----------------|---------------------|
+| **Python**     | ML development       |          |**NumPy**        | Numerical computing |
+| **Pandas**     | Data processing      |          |**scikit-learn** | Machine learning    |
+| **SciPy**      | Scientific computing |          |**Joblib**       | Model persistence   |
+-----------------------------------------           ---------------------------------------
 
-The system can generate a career match such as:
-
-Data Scientist
-
-with supporting information including:
-
-Strengths
-
-Skills
-
-Next steps
-
-Match percentage
-
-Salary range
-
-Career scope
-
--------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 ## 🏗️ System Architecture
 ```text
                          ┌──────────────────┐
@@ -113,6 +116,27 @@ Career scope
                        └──────────────────┘
 
 ```
+
+---------------------------------------------------------------------------------------
+## 🧠 Example Career Recommendation:
+
+The system can generate a career match such as:
+
+Data Scientist
+
+with supporting information including:
+
+Strengths
+
+Skills
+
+Next steps
+
+Match percentage
+
+Salary range
+
+Career scope
 
 ---------------------------------------------------------------------------------------
 ## 🚀 Deployment
